@@ -1,5 +1,5 @@
 /* Generics elements */
-.html {
+html {
   font-size: 62.5%; }
 
 .body {
@@ -22,6 +22,17 @@ p {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 8px; }
+
+.btn-quantity, .btn-quantity:last-child {
+  background-color: #ADB5BD;
+  border: 0;
+  border-bottom: 1px solid white;
+  border-radius: 0; }
+  .btn-quantity:last-child {
+    border: 0;
+    border-top: 1px solid white; }
+  .btn-quantity:hover {
+    background-color: #9fa8b2; }
 
 .article-title {
   color: black;
@@ -97,11 +108,14 @@ p {
     background-color: rgba(240, 248, 255, 0.5); }
 
 .content-counter {
-  background-color: #adb5bd; }
+  background-color: #D5DFE8; }
+  .content-counter .counter {
+    margin: 32% 20%;
+    color: black;
+    font-size: 1.8rem; }
 
-.counter {
-  margin: 20% 20%;
-  color: black;
-  font-size: 1.8rem; }
+.continue-shop a, .continue-shop a:hover {
+  border-bottom: 1px solid black;
+  text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */

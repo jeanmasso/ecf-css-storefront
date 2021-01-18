@@ -1,41 +1,41 @@
-<section class="container product-details">
+// Section détail d'un article
+section(class="container product-details")
 
-<nav aria-label="breadcrumb">
-<ol class="breadcrumb text-uppercase font-weight-bold bg-white justify-content-center my-5">
-<li class="breadcrumb-item"><a class="text-dark" href="#">Home</a></li>
-<li class="breadcrumb-item"><a class="text-dark" href="#">Plates</a></li>
-<li class="breadcrumb-item active" aria-current="page">Hand painted blue flat dish</li>
-</ol>
-</nav>
+    // Breadcrumb
+    nav(aria-label="breadcrumb")
+        ol(class="breadcrumb text-uppercase font-weight-bold bg-white justify-content-center my-5")
+            li(class="breadcrumb-item")
+                a(class="text-dark" href="#") Home
+            li(class="breadcrumb-item")
+                a(class="text-dark" href="#") Plates
+            li(class="breadcrumb-item active" aria-current="page") Hand painted blue flat dish
 
-<div class="row">
-<div class="col-8">
-<div class="w-100 h-100">
-<img class="w-100 h-auto" src="../media/hand-painted-blue-flat-dish.jpg" />
-</div>
-</div>
-<div class="col-4">
-<div class="row text-center">
-<p class="col-12 my-2">Kiriko</p>
-<h1 class="col-12 font-weight-bold my-4">Hand Painted Blue Flat Dish</h1>
-<p class="col-12 mt-2 mb-4">$28.00</p>
-<p class="col-12 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget arcu. Curabitur ac pharetra nisl, sit amet mattis dolor.</p>
-</div>
-<div class="row my-5 pt-5 border-top">
-<div class="col-4 h-auto d-flex">
-<div class="content-counter w-100 mr-1 text-center">
-<p class="counter justify-content-center">1</p>
-</div>
-<div>
-<button class="btn ml-1 mb-1 d-block rounded-0 bg-secondary"><i class="fas fa-plus"></i></button>
-<button class="btn ml-1 mt-1 d-block rounded-0 bg-secondary"><i class="fas fa-minus"></i></button>
-</div>
-</div>
-<div class="col-8 p-0 h-auto">
-<button class="btn h-100 btn-option">Add to cart</button>
-</div>
-</div>
-</div>
-</div>
+    div(class="row")
 
-</section>
+        // Image de l'article
+        div(class="col-8")
+            div(class="w-100 h-100")
+                img(class="w-100 h-auto" src="media/hand-painted-blue-flat-dish.jpg")
+
+        // Description de l'article
+        div(class="col-4")
+            // Contenu de gestion du texte
+            div(class="row text-center")
+                p(class="col-12 my-2") Kiriko
+                h1(class="col-12 font-weight-bold my-4") Hand Painted Blue Flat Dish
+                p(class="col-12 mt-2 mb-4") $28.00
+                p(class="col-12 text-center") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget arcu. Curabitur ac pharetra nisl, sit amet mattis dolor.
+            // Contenu de gestion de commande
+            div(class="row my-5 pt-5 border-top justify-content-center")
+                // Gestion des quantités
+                div(class="col-4 h-auto d-flex")
+                    div(class="content-counter w-100 text-center")
+                        p(class="counter justify-content-center") 1
+                    div
+                        button(class="btn h-50 ml-1 btn-quantity")
+                            i(class="fas fa-plus")
+                        button(class="btn h-50 ml-1 btn-quantity")
+                            i(class="fas fa-minus")
+                // Ajout au panier
+                div(class="col-5 p-0 h-auto")
+                    button(class="btn w-100 h-100 btn-option") Add to cart

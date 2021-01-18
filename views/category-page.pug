@@ -1,12 +1,17 @@
+// Section de la bannière
 section(class="banner")
+    // Contenu de la bannière
     div(class="in-banner")
         div(class="text-content text-white text-center")
             div(class="banner-title")
                 h1(class="border-bottom m-0 pb-3") Plates
             div(class="banner-text pt-3") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at purus pulvinar, placerat turpis ac, interdum metus. In eget massa sed enim hendrerit auctor a eget arcu. Curabitur ac pharetra nisl sit.
 
+//Section des différents articles
 section(class="articles")
-    div(class="row" id="all-article")
+    div(class="row")
+
+        // Article n°1
         div(class="col-6 col-lg-4 my-lg-5")
             div(class="card")
                 img(class="card-img-top" src="media/blue-stripe-stoneware-plate.jpg" alt="Image of blue stripe stoneware plate" title="Blue stripe stoneware plate")
@@ -14,16 +19,21 @@ section(class="articles")
                     p Kiriko
                     p(class="card-text article-title") Blue stripe stoneware plate
                     p $40.00
+
+        // Article n°2
         div(class="col-6 col-lg-4 my-lg-5")
             div(class="card")
-                img(class="card-img-top article-2" src="media/hand-painted-blue-flat-dish.jpg" alt="Image of hand painted blue flat dish" title="Hand painted blue flat dish")
+                img(class="card-img-top" id="article-2" src="media/hand-painted-blue-flat-dish.jpg" alt="Image of hand painted blue flat dish" title="Hand painted blue flat dish")
                 div(class="article-option" id="articleOption" hidden)
-                    button(class="btn btn-option mb-4") View details
+                    button(class="btn btn-option mb-4")
+                        a(href="product-details") View details
                     button(class="btn btn-option mx-auto my-0") Add to cart
                 div(class="card-body")
                     p Kiriko
                     p(class="card-text article-title") Hand painted blue flat dish
                     p $28.00
+
+        // Article n°3
         div(class="col-6 col-lg-4 my-3 my-lg-5")
             div(class="card")
                 img(class="card-img-top" src="media/heme.jpg" alt="Image of heme" title="Heme")
@@ -31,6 +41,8 @@ section(class="articles")
                     p Dust & Form
                     p(class="card-text article-title") Heme
                     p $52.00
+
+        // Article n°4
         div(class="col-6 col-lg-4 my-3 m-lg-0")
             div(class="card")
                 img(class="card-img-top" src="media/mashiko-yaki-green-small-plate.jpg" alt="Image of mashiko-yaki green small plate" title="Mashiko yaki green small plate")
@@ -38,6 +50,8 @@ section(class="articles")
                     p Kiriko
                     p(class="card-text article-title") Mashiko-yaki green small plate
                     p $18.00
+
+        // Article n°5
         div(class="col-6 col-lg-4")
             div(class="card")
                 img(class="card-img-top" src="media/mashiko-yaki-indigo-small-plate.jpg" alt="Image of mashiko-yaki indigo small plate" title="Mashiko yaki indigo small plate")
@@ -45,6 +59,8 @@ section(class="articles")
                     p Kiriko
                     p(class="card-text article-title") Mashiko-yaki indigo small plate
                     p $28.00
+
+        // Article n°6
         div(class="col-6 col-lg-4")
             div(class="card")
                 img(class="card-img-top" src="media/mashiko-yaki-saucer.jpg" alt="Image of mashiko-yaki saucer" title="Mashiko-yaki saucer")

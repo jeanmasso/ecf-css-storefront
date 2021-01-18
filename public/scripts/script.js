@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-    $(".article-2, #articleOption").mouseover(function(){
+    $("#article-2, #articleOption").mouseover(function(){
         $("#articleOption").attr('hidden',false);
     });
-    $(".article-2, #articleOption").mouseout(function(){
+    $("#article-2, #articleOption").mouseout(function(){
         $("#articleOption").attr('hidden',true);
     });
 

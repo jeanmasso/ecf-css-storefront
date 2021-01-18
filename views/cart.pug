@@ -1,0 +1,94 @@
+div(class="bg-light")
+    section(class="container")
+
+        div(class="row mx-5 py-5 justify-content-center")
+            h1(class="my-5") Shopping Cart
+
+        // Tableau des carts
+        div(class="bg-white p-5")
+            // Tête du tableau
+            div(class="row mx-0 my-5 py-3 border-bottom d-none d-lg-flex")
+                div(class="col-6")
+                    span Product
+                div(class="col-2 text-center")
+                    span Quantity
+                div(class="col-2 text-center")
+                    span Total
+                div(class="col-2 text-center")
+                    span Action
+
+            // Article n°1
+            div(class="row mx-0 my-5 mb-lg-5 py-3 pb-lg-5 border-bottom")
+                div(class="col-12 col-lg-6 mb-5")
+                    div(class="row m-0")
+                        // Image de l'article
+                        div(class="col-4 p-0")
+                            img(class="w-100 h-auto" src="media/hand-painted-blue-flat-dish.jpg" alt="Image of hand painted blue flat dish" title="Hand painted blue flat dish")
+                        // Caractéristique de l'article
+                        div(class="col-8 pr-0")
+                            p Kiriko
+                            p(class="article-title") Hand painted blue flat dish
+                            p Color: white
+                div(class="col-4 col-lg-2 mb-5 text-center")
+                    // Gestion des quantités
+                    div(class="h-lg-50 w-50 m-lg-auto d-flex")
+                        div(class="content-counter w-75 text-center")
+                            p(class="counter justify-content-center") 1
+                        div(class="w-50")
+                            button(class="btn w-100 h-50 ml-1 btn-quantity")
+                                i(class="fas fa-plus")
+                            button(class="btn w-100 h-50 ml-1 btn-quantity")
+                                i(class="fas fa-minus")
+                div(class="col-7 col-lg-2 mb-5 text-right text-lg-center")
+                    p $28.00
+                div(class="col-1 col-lg-2 mb-5 text-right text-lg-center")
+                    // Action sur l'article (suppression)
+                    i(class="fas fa-times")
+
+            // Article n°2
+            div(class="row mx-0 mb-5 pb-5 border-bottom")
+                div(class="col-12 col-lg-6 mb-5")
+                    div(class="row m-0")
+                        // Image de l'article
+                        div(class="col-4 p-0")
+                            img(class="w-100 h-auto" src="media/mashiko-yaki-indigo-small-plate.jpg" alt="Image of mashiko yaki indigo small plate" title="Mashiko yaki indigo small plate")
+                        // Caractéristique de l'article
+                        div(class="col-8 pr-0")
+                            p Kiriko
+                            p(class="article-title") Mashiko yaki indigo small plate
+                div(class="col-4 col-lg-2 mb-5 text-center")
+                    // Gestion des quantités
+                    div(class="h-lg-50 w-50 m-lg-auto d-flex")
+                        div(class="content-counter w-75 text-center")
+                            p(class="counter justify-content-center") 1
+                        div(class="w-50")
+                            button(class="btn w-100 h-50 ml-1 btn-quantity")
+                                i(class="fas fa-plus")
+                            button(class="btn w-100 h-50 ml-1 btn-quantity")
+                                i(class="fas fa-minus")
+                div(class="col-7 col-lg-2 mb-5 text-right text-lg-center")
+                    p $28.00
+                div(class="col-1 col-lg-2 mb-5 text-right text-lg-center")
+                    // Action sur l'article (suppression)
+                    i(class="fas fa-times")
+
+            // Total du tableau
+            div(class="row mx-0 mb-5 border-bottom")
+                div(class="col-6 d-none d-lg-flex")
+                div(class="col-12 col-lg-6 mb-5")
+                    div(class="row text-uppercase")
+                        div(class="col-6 text-left") Cart Overview
+                        div(class="col-6 text-right")
+                    div(class="row my-3 text-uppercase")
+                        div(class="col-6 text-left") Subtotal
+                        div(class="col-6 text-right") $56.00
+                    div(class="row text-uppercase")
+                        div(class="col-6 text-left") Total
+                        div(class="col-6 text-right") $56.00 CAD
+
+            // Action sur le panier
+            div(class="row mx-0")
+                div(class="continue-shop col-12 col-lg-6 mb-5 mb-lg-0 text-center text-lg-left")
+                    a(class="text-dark text-uppercase" href="home") Continue shopping
+                div(class="col-12 col-lg-6 mb-5 text-center text-lg-right")
+                    button(class="btn w-50 btn-option") Checkout ($56.00)
