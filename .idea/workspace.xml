@@ -5,16 +5,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/.sass-cache/8fc4c825db39ae74735ff181a084a089f9034299/mobile.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/.sass-cache/8fc4c825db39ae74735ff181a084a089f9034299/mobile.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/.sass-cache/8fc4c825db39ae74735ff181a084a089f9034299/style.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/.sass-cache/8fc4c825db39ae74735ff181a084a089f9034299/style.scssc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/mobile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/mobile.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/mobile.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/mobile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/mobile.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/cart.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/cart.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/category-page.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/category-page.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,15 +52,13 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,7 +75,9 @@
       <workItem from="1610658233281" duration="24270000" />
       <workItem from="1610689309891" duration="362000" />
       <workItem from="1610916798722" duration="27722000" />
-      <workItem from="1611004775690" duration="9700000" />
+      <workItem from="1611004775690" duration="10280000" />
+      <workItem from="1611015441976" duration="18000" />
+      <workItem from="1611021736674" duration="884000" />
     </task>
     <servers />
   </component>
