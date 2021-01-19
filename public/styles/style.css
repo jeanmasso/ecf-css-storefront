@@ -13,6 +13,9 @@ p {
 
 .btn {
   font-size: 1.2rem; }
+  .btn a {
+    color: inherit;
+    text-decoration: none; }
 
 .btn-option {
   background-color: #1b1e21;
@@ -114,8 +117,20 @@ p {
     color: black;
     font-size: 1.8rem; }
 
-.continue-shop a, .continue-shop a:hover {
-  border-bottom: 1px solid black;
-  text-decoration: none; }
+@media (min-width: 576px) {
+  .continue-shop {
+    border-bottom: 1px solid black; } }
+@media (min-width: 992px) {
+  .continue-shop {
+    border: 0; } }
+
+@media (min-width: 576px) {
+  .continue-shop a, .continue-shop a:hover {
+    border-bottom: 0;
+    text-decoration: none; } }
+@media (min-width: 992px) {
+  .continue-shop a, .continue-shop a:hover {
+    border-bottom: 1px solid black;
+    text-decoration: none; } }
 
 /*# sourceMappingURL=style.css.map */

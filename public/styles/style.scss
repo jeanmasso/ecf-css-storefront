@@ -1,169 +1,216 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
 $btn-quantity-bg-color: #ADB5BD;
 
-/* Generics elements */
-html {font-size: 62.5%;}
-
-.body {
-  font-family: 'Alef', sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
+// Small devices
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
 }
 
-p {
-  margin: 0;
-  color: gray;
+// Large devices
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
 }
 
-.btn {font-size: 1.2rem;}
 
-.btn-option {
-  background-color: #1b1e21;
-  color: white;
-  border-radius: 0;
-  width: 155px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 8px;
-}
-
-.btn-quantity {
-  background-color: $btn-quantity-bg-color;
-  border: 0;
-  border-bottom: 1px solid white;
-  border-radius: 0;
-
-  &:last-child {
-    @extend .btn-quantity;
-    border: 0;
-    border-top: 1px solid white;
+  /* Generics elements */
+  html {
+    font-size: 62.5%;
   }
 
-  &:hover {
-    background-color: darken($btn-quantity-bg-color, 5);
-  }
-
-}
-
-.article-title {
-  color: black;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.nav-link-cart:hover {border-bottom: 1px solid;}
-
-/* Specifics elements */
-.dropdown-menu-cart {
-  width: 362px;
-  padding: 15px;
-  font-family: 'Noto Sans JP', sans-serif;
-
-  & .article-quantities {
-    font-family: inherit;
-    text-transform: none;
-    font-weight: normal;
-  }
-
-  & .btn {
-    padding: 12px;
+  .body {
+    font-family: 'Alef', sans-serif;
+    font-size: 1.4rem;
     letter-spacing: 2px;
   }
 
-  & .btn-cart {
-    background-color: white;
-    border: 1px solid black;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 0;
-    letter-spacing: 2px;
-  }
-}
-
-.banner {
-  background: {
-    image: url("../media/plates-header.jpg");
-    attachment: scroll;
-    repeat: no-repeat;
-    size: cover;
+  p {
+    margin: 0;
+    color: gray;
   }
 
-  & .in-banner {
+  .btn {
+    font-size: 1.2rem;
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
+  .btn-option {
     background-color: #1b1e21;
-    margin: 0 25%;
-    height: 640px;
-    border: 0 {
-      left: 10px solid white;
-      right: 10px solid white;
-    };
+    color: white;
+    border-radius: 0;
+    width: 155px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 8px;
   }
 
-  & .text-content {
-    padding: 256px 10%;
-  }
-
-  & .banner-title {
-    width: fit-content;
-    margin: auto;
-  }
-
-  & h1 {
-    font-size: 4rem;
-    font-family: 'Crimson Text', serif;
-  }
-
-  & .banner-text {
-    letter-spacing: normal;
-    font-size: 1.6rem;
-  }
-
-}
-
-.articles {
-  margin: 0 20%;
-
-  & .col {
-    padding: 4rem {
-      top: 0;
-      bottom: 0;
-    };
-  }
-
-  & .card {
+  .btn-quantity {
+    background-color: $btn-quantity-bg-color;
     border: 0;
+    border-bottom: 1px solid white;
+    border-radius: 0;
+
+    &:last-child {
+      @extend .btn-quantity;
+      border: 0;
+      border-top: 1px solid white;
+    }
+
+    &:hover {
+      background-color: darken($btn-quantity-bg-color, 5);
+    }
+
   }
 
-  & .card-img-top {
-    height: 260px;
-    width: 100%;
-  }
-
-  & .card-body {
-    text-align: center;
-  }
-
-  & .article-option {
-    position: absolute;
-    width: 100%;
-    padding: 25% 28% 0;
-    height: 260px;
-    background-color: rgba(240,248,255,0.5);
-  }
-
-}
-
-.content-counter {
-  background-color: #D5DFE8;
-
-  & .counter {
-    margin: 32% 20%;
+  .article-title {
     color: black;
-    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
   }
 
-}
+  .nav-link-cart:hover {
+    border-bottom: 1px solid;
+  }
 
-.continue-shop a, .continue-shop a:hover{
-  border-bottom: 1px solid black;
-  text-decoration: none;
-}
+  /* Specifics elements */
+  .dropdown-menu-cart {
+    width: 362px;
+    padding: 15px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+    & .article-quantities {
+      font-family: inherit;
+      text-transform: none;
+      font-weight: normal;
+    }
+
+    & .btn {
+      padding: 12px;
+      letter-spacing: 2px;
+    }
+
+    & .btn-cart {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-radius: 0;
+      letter-spacing: 2px;
+    }
+  }
+
+  .banner {
+    background: {
+      image: url("../media/plates-header.jpg");
+      attachment: scroll;
+      repeat: no-repeat;
+      size: cover;
+    }
+
+    & .in-banner {
+      background-color: #1b1e21;
+      margin: 0 25%;
+      height: 640px;
+      border: 0 {
+        left: 10px solid white;
+        right: 10px solid white;
+      };
+    }
+
+    & .text-content {
+      padding: 256px 10%;
+    }
+
+    & .banner-title {
+      width: fit-content;
+      margin: auto;
+    }
+
+    & h1 {
+      font-size: 4rem;
+      font-family: 'Crimson Text', serif;
+    }
+
+    & .banner-text {
+      letter-spacing: normal;
+      font-size: 1.6rem;
+    }
+
+  }
+
+  .articles {
+    margin: 0 20%;
+
+    & .col {
+      padding: 4rem {
+        top: 0;
+        bottom: 0;
+      };
+    }
+
+    & .card {
+      border: 0;
+    }
+
+    & .card-img-top {
+      height: 260px;
+      width: 100%;
+    }
+
+    & .card-body {
+      text-align: center;
+    }
+
+    & .article-option {
+      position: absolute;
+      width: 100%;
+      padding: 25% 28% 0;
+      height: 260px;
+      background-color: rgba(240, 248, 255, 0.5);
+    }
+
+  }
+
+  .content-counter {
+    background-color: #D5DFE8;
+
+    & .counter {
+      margin: 32% 20%;
+      color: black;
+      font-size: 1.8rem;
+    }
+
+  }
+
+  .continue-shop {
+    @include sm {
+      border-bottom: 1px solid black;
+    }
+    @include lg {
+      border:0;
+    }
+  }
+
+  .continue-shop a, .continue-shop a:hover {
+    @include sm {
+      border-bottom: 0;
+      text-decoration: none;
+    }
+    @include lg {
+       border-bottom: 1px solid black;
+       text-decoration: none;
+    }
+  }
