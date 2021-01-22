@@ -1,5 +1,29 @@
 $(document).ready(function () {
 
+    $.getJSON( "json/products.json", function(data) {
+        $.each(data, function(key, val) {
+            $("#articles").append(`
+                <div class="col-6 col-lg-4 my-lg-5">
+                    <div class="card">
+                        <img class="card-img-top" id="article-2" src="media/${val.image}" alt="Image of ${val.title}" title="${val.title}"/>
+                        <div class="article-option" id="articleOption" hidden>
+                            <button class="btn btn-option mb-4">
+                                <a href="product-details"> View details</a>
+                            </button>
+                            <button class="btn btn-option mx-auto my-0"> Add to cart</button>
+                        </div>
+                        <div class="card-body">
+                            <p>${val.brand}</p>
+                            <p class="card-text article-title">${val.title}</p>
+                            <p>$${val.price},00</p>
+                        </div>
+                    </div>
+                </div>
+            `);
+        });
+
+    });
+
     $("#article-2, #articleOption").mouseover(function(){
         $("#articleOption").attr('hidden',false);
     });
@@ -14,5 +38,6 @@ $(document).ready(function () {
             $("#shopCart").replaceWith( "<span id=\"shopCart\">My cart </span>" );
         }
     });
-
 })
+
+

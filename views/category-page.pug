@@ -9,62 +9,17 @@ section(class="banner")
 
 //Section des différents articles
 section(class="articles")
-    div(class="row mt-5")
+    div(id="articles" class="row mt-5")
 
-        // Article n°1
-        div(class="col-6 col-lg-4 my-lg-5")
-            div(class="card")
-                img(class="card-img-top" src="media/blue-stripe-stoneware-plate.jpg" alt="Image of blue stripe stoneware plate" title="Blue stripe stoneware plate")
-                div(class="card-body")
-                    p Kiriko
-                    p(class="card-text article-title") Blue stripe stoneware plate
-                    p $40.00
-
-        // Article n°2
-        div(class="col-6 col-lg-4 my-lg-5")
-            div(class="card")
-                img(class="card-img-top" id="article-2" src="media/hand-painted-blue-flat-dish.jpg" alt="Image of hand painted blue flat dish" title="Hand painted blue flat dish")
-                div(class="article-option" id="articleOption" hidden)
-                    button(class="btn btn-option mb-4")
-                        a(href="product-details") View details
-                    button(class="btn btn-option mx-auto my-0") Add to cart
-                div(class="card-body")
-                    p Kiriko
-                    p(class="card-text article-title") Hand painted blue flat dish
-                    p $28.00
-
-        // Article n°3
-        div(class="col-6 col-lg-4 my-3 my-lg-5")
-            div(class="card")
-                img(class="card-img-top" src="media/heme.jpg" alt="Image of heme" title="Heme")
-                div(class="card-body")
-                    p Dust & Form
-                    p(class="card-text article-title") Heme
-                    p $52.00
-
-        // Article n°4
-        div(class="col-6 col-lg-4 my-3 m-lg-0")
-            div(class="card")
-                img(class="card-img-top" src="media/mashiko-yaki-green-small-plate.jpg" alt="Image of mashiko-yaki green small plate" title="Mashiko yaki green small plate")
-                div(class="card-body")
-                    p Kiriko
-                    p(class="card-text article-title") Mashiko-yaki green small plate
-                    p $18.00
-
-        // Article n°5
-        div(class="col-6 col-lg-4")
-            div(class="card")
-                img(class="card-img-top" src="media/mashiko-yaki-indigo-small-plate.jpg" alt="Image of mashiko-yaki indigo small plate" title="Mashiko yaki indigo small plate")
-                div(class="card-body")
-                    p Kiriko
-                    p(class="card-text article-title") Mashiko-yaki indigo small plate
-                    p $28.00
-
-        // Article n°6
-        div(class="col-6 col-lg-4")
-            div(class="card")
-                img(class="card-img-top" src="media/mashiko-yaki-saucer.jpg" alt="Image of mashiko-yaki saucer" title="Mashiko-yaki saucer")
-                div(class="card-body")
-                    p Kiriko
-                    p(class="card-text article-title") Mashiko-yaki saucer
-                    p $18.00
+//script(id="template" type="text/template")
+//    div(class="col-6 col-lg-4 my-lg-5")
+//        div(class="card")
+//            //img(class="card-img-top" id="article-3" src="media/{{image}}" alt="Image of hand painted blue flat dish" title="Hand painted blue flat dish")
+//            div(class="article-option" id="articleOptions" hidden)
+//                button(class="btn btn-option mb-4")
+//                    a(href="product-details") View details
+//                button(class="btn btn-option mx-auto my-0") Add to cart
+//            div(class="card-body")
+//                p {{brand}}
+//                p(class="card-text article-title") {{title}}
+//                p {{price}}
