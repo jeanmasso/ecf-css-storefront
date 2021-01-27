@@ -44,6 +44,12 @@ Pour compiler les fichiers .scss en .css automatiquement, ajouter cette commande
     "scss": "node-sass --watch public/styles -o public/styles"
   },
 ```
+### - Bonus: Mustache.js (intégration en cours)
+Dans le projet, il est encore en cours d'intégration pour l'apprentissage du langage, ceci dit le projet en lui-même est fini.</br>
+Mustache.js est une implémentation sans dépendance du système de modèle de mustache en JavaScript. Mustache est une syntaxe de modèle sans logique. Il peut être utilisé pour le HTML, les fichiers de configuration, le code source - n'importe quoi. Il fonctionne en développant les balises dans un modèle à l'aide des valeurs fournies dans un hachage ou un objet.
+```
+npm install mustache
+```
 ## Lancer le projet
 ### - Lancer le serveur
 ```
