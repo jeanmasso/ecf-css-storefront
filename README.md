@@ -37,7 +37,7 @@ Node-sass est une bibliothèque qui fournit la liaison de Node.js à LibSass , l
 ```
 npm install node-sass
 ```
-Pour compiler les fichiers .scss en .css automatiquement, ajouter cette commande au fichier package.json "scss": "node-sass --watch public/styles -o public/styles", de façon à ce qu'il ressemble à l'expemple ce-dessous:
+Pour compiler les fichiers .scss en .css automatiquement, ajouter cette commande, si il ne l'a pas déjà, au fichier package.json "scss": "node-sass --watch public/styles -o public/styles", de façon à ce qu'il ressemble à l'expemple ce-dessous:
 ```
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
