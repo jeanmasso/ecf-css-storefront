@@ -1,217 +1,316 @@
-// Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
+/* -- DÉFINITIONS DES COULEURS GÉNÉRIQUES -- */
 
-// Tablets and small desktops
-$screen-lg-min: 992px;
+$bgcolor-inbanner: #393935;
+$bgcolor-inbanner-hover: #4A4A4D;
+$bgcolor-shopping-cart:#F6F6F6;
+$bgcolor-content-counter: #EEEEEE;
+$btn-quantity-bgcolor: #DADADA;
 
-$btn-quantity-bg-color: #ADB5BD;
+/* -- MIXINS DE GESTION DU RESPONSIVE -- */
 
-// Small devices
+$screen-sm-min: 576px; // Taille d'écran de type mobile
 @mixin sm {
   @media (min-width: #{$screen-sm-min}) {
     @content;
   }
 }
 
-// Large devices
+$screen-lg-min: 992px; // Taille d'écran de type tablette et pc
 @mixin lg {
   @media (min-width: #{$screen-lg-min}) {
     @content;
   }
 }
 
+$screen-xl-min: 1441px; // Taille d'écran de type pc
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
 
-  /* Generics elements */
-  html {
-    font-size: 62.5%;
+
+/* -- ÉLÉMENTS GÉNÉRIQUES -- */
+html {font-size: 62.5%;}
+
+.body {
+  font-family: 'Alef', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+p {
+  margin: 0;
+  color: gray;
+}
+
+// Bouton générale
+.btn {
+  background-color: $bgcolor-inbanner;
+  color: white;
+  border-radius: 0;
+  width: 155px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 8px;
+  font-size: 1.2rem;
+
+  &:hover{
+    @extend .btn;
+    background-color: $bgcolor-inbanner-hover;
   }
 
-  .body {
-    font-family: 'Alef', sans-serif;
-    font-size: 1.4rem;
+  & a{
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.article-title {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* -- ÉLÉMENTS SPÉCIFIQUES -- */
+
+.navbar-toggler {
+  @include sm {
+    font-size: 2rem;
+  }
+  @include lg {
+    font-size: initial;
+  }
+}
+
+.nav-link-cart:hover {border-bottom: 1px solid;}
+
+// Dropdown de gestion du panier
+.dropdown-menu-cart {
+  width: 362px;
+  padding: 15px;
+  font-family: 'Noto Sans JP', sans-serif;
+
+  & .article-quantities {
+    font-family: inherit;
+    text-transform: none;
+    font-weight: normal;
+  }
+
+  & .btn {
+    padding: 12px;
     letter-spacing: 2px;
   }
 
-  p {
-    margin: 0;
-    color: gray;
-  }
-
-  .btn {
-    font-size: 1.2rem;
-
-    & a {
-      color: inherit;
-      text-decoration: none;
-    }
-  }
-
-  .btn-option {
-    background-color: #1b1e21;
-    color: white;
-    border-radius: 0;
-    width: 155px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 8px;
-  }
-
-  .btn-quantity {
-    background-color: $btn-quantity-bg-color;
-    border: 0;
-    border-bottom: 1px solid white;
-    border-radius: 0;
-
-    &:last-child {
-      @extend .btn-quantity;
-      border: 0;
-      border-top: 1px solid white;
-    }
-
-    &:hover {
-      background-color: darken($btn-quantity-bg-color, 5);
-    }
-
-  }
-
-  .article-title {
+  & .btn-cart {
+    background-color: white;
+    border: 1px solid black;
     color: black;
-    text-transform: uppercase;
     font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0;
+    letter-spacing: 2px;
+  }
+}
+
+// Affichage de la bannière
+.banner {
+  background: {
+    image: url("../media/plates-header.jpg");
+    attachment: scroll;
+    repeat: no-repeat;
+    position: center;
+    size: 100% auto;
   }
 
-  .nav-link-cart:hover {
-    border-bottom: 1px solid;
+  & .in-banner {
+    background-color: $bgcolor-inbanner;
+    border: 0 {
+      left: 10px solid white;
+      right: 10px solid white;
+    };
+    @include sm {
+      margin: 0 12%;
+      height: 325px;
+    }
+    @include lg {
+      margin: 0 25%;
+      height: 480px;
+    }
   }
 
-  /* Specifics elements */
-  .dropdown-menu-cart {
-    width: 362px;
-    padding: 15px;
-    font-family: 'Noto Sans JP', sans-serif;
+  & .text-content {
 
-    & .article-quantities {
-      font-family: inherit;
-      text-transform: none;
+    @include sm {
+      padding: 8% 10%;
+    }
+    @include lg {
+      padding: 27% 6%;
+    }
+    @include xl {
+      padding: 17% 5%;
+    }
+  }
+
+  & .banner-title {
+    width: fit-content;
+    margin: auto;
+  }
+
+  & h2 {
+    font-family: 'Crimson Text', serif;
+    @include sm {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    @include lg {
+      font-size: 3.5rem;
+      border-bottom: 1px solid white;
       font-weight: normal;
     }
-
-    & .btn {
-      padding: 12px;
-      letter-spacing: 2px;
-    }
-
-    & .btn-cart {
-      background-color: white;
-      border: 1px solid black;
-      color: black;
-      font-weight: bold;
-      text-transform: uppercase;
-      border-radius: 0;
-      letter-spacing: 2px;
-    }
-  }
-
-  .banner {
-    background: {
-      image: url("../media/plates-header.jpg");
-      attachment: scroll;
-      repeat: no-repeat;
-      size: cover;
-    }
-
-    & .in-banner {
-      background-color: #1b1e21;
-      margin: 0 25%;
-      height: 640px;
-      border: 0 {
-        left: 10px solid white;
-        right: 10px solid white;
-      };
-    }
-
-    & .text-content {
-      padding: 256px 10%;
-    }
-
-    & .banner-title {
-      width: fit-content;
-      margin: auto;
-    }
-
-    & h1 {
+    @include xl {
       font-size: 4rem;
-      font-family: 'Crimson Text', serif;
-    }
-
-    & .banner-text {
-      letter-spacing: normal;
-      font-size: 1.6rem;
     }
 
   }
 
-  .articles {
+  & .banner-text {
+    letter-spacing: normal;
+    @include sm {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    @include lg {
+      font-size: 1.3rem;
+      font-weight: normal;
+    }
+    @include xl {
+      font-size: 1.8rem;
+    }
+  }
+
+}
+
+// Affichage des articles
+.articles {
+  @include sm {
+    margin: 0 5%;
+  }
+  @include lg {
     margin: 0 20%;
-
-    & .col {
-      padding: 4rem {
-        top: 0;
-        bottom: 0;
-      };
-    }
-
-    & .card {
-      border: 0;
-    }
-
-    & .card-img-top {
-      height: 260px;
-      width: 100%;
-    }
-
-    & .card-body {
-      text-align: center;
-    }
-
-    & .article-option {
-      position: absolute;
-      width: 100%;
-      padding: 25% 28% 0;
-      height: 260px;
-      background-color: rgba(240, 248, 255, 0.5);
-    }
-
   }
 
-  .content-counter {
-    background-color: #D5DFE8;
+  & .col {
+    padding: 4rem {
+      top: 0;
+      bottom: 0;
+    };
+  }
 
-    & .counter {
+  & .card {
+    border: 0;
+  }
+
+  & .card-img-top {
+    height: 260px;
+    width: 100%;
+  }
+
+  & .card-body {
+    text-align: center;
+  }
+
+  & .article-option {
+    position: absolute;
+    width: 100%;
+    height: 260px;
+    background-color: rgba(250, 250, 250, 0.5);
+    @include sm {
+      padding: 20% 32% 0;
+    }
+    @include lg {
+      padding: 34% 21% 0;
+    }
+    @include xl {
+      padding: 25% 28% 0;
+    }
+  }
+
+}
+
+.title-cart {
+  @include sm {
+    font-size: 4rem;
+  }
+  @include lg {
+    font-size: 4rem;
+  }
+}
+
+.shopping-cart {background-color: $bgcolor-shopping-cart;}
+
+// Affichage du compteur de quantité
+.content-counter {
+  background-color: $bgcolor-content-counter;
+
+  & .counter {
       margin: 32% 20%;
       color: black;
       font-size: 1.8rem;
-    }
-
   }
 
-  .continue-shop {
+  & .counter-sm {
     @include sm {
-      border-bottom: 1px solid black;
-    }
-    @include lg {
-      border:0;
+      color: black;
+      font-size: 1.8rem;
+      margin: 20% 20%;
     }
   }
 
-  .continue-shop a, .continue-shop a:hover {
-    @include sm {
-      border-bottom: 0;
-      text-decoration: none;
-    }
-    @include lg {
-       border-bottom: 1px solid black;
-       text-decoration: none;
-    }
+}
+
+// Bouton de gestion de quantité "+" ou "-"
+.btn-quantity {
+  background-color: $btn-quantity-bgcolor;
+  color: black;
+  border: 0;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+
+  &:last-child {
+    @extend .btn-quantity;
+    border: 0;
+    border-top: 1px solid white;
   }
+
+  &:hover {
+    @extend .btn-quantity;
+    background-color: darken($btn-quantity-bgcolor, 5);
+  }
+
+}
+
+// Affichage du lien permettant de continuer le shopping
+.continue-shop {
+  @include sm {
+    border-bottom: 1px solid black;
+  }
+  @include lg {
+    border:0;
+  }
+
+  & a, & a:hover {
+   @include sm {
+     border-bottom: 0;
+     text-decoration: none;
+   }
+   @include lg {
+     border-bottom: 1px solid black;
+     text-decoration: none;
+   }
+ }
+
+}
+
+
 

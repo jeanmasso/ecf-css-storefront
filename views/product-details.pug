@@ -1,5 +1,5 @@
 // Section détail d'un article
-section(class="container product-details")
+section(class="container-fluid container-lg product-details")
 
     // Breadcrumb
     nav(aria-label="breadcrumb")
@@ -13,12 +13,12 @@ section(class="container product-details")
     div(class="row")
 
         // Image de l'article
-        div(class="col-8")
+        div(class="col-12 col-lg-8")
             div(class="w-100 h-100")
                 img(class="w-100 h-auto" src="media/hand-painted-blue-flat-dish.jpg")
 
         // Description de l'article
-        div(class="col-4")
+        div(class="col-12 col-lg-4")
             // Contenu de gestion du texte
             div(class="row text-center")
                 p(class="col-12 my-2") Kiriko
@@ -28,14 +28,14 @@ section(class="container product-details")
             // Contenu de gestion de commande
             div(class="row my-5 pt-5 border-top justify-content-center")
                 // Gestion des quantités
-                div(class="col-4 h-auto d-flex")
+                div(class="col-3 col-lg-4 h-auto d-flex")
                     div(class="content-counter w-100 text-center")
-                        p(class="counter justify-content-center") 1
+                        p(class="counter-sm counter justify-content-center") 1
                     div
-                        button(class="btn h-50 ml-1 btn-quantity")
+                        button(class="btn h-50 w-75 ml-1 btn-quantity")
                             i(class="fas fa-plus")
-                        button(class="btn h-50 ml-1 btn-quantity")
+                        button(class="btn h-50 w-75 ml-1 btn-quantity")
                             i(class="fas fa-minus")
                 // Ajout au panier
-                div(class="col-5 p-0 h-auto")
-                    button(class="btn w-100 h-100 btn-option") Add to cart
+                div(class="col-3 col-lg-5 p-0 h-auto")
+                    button(class="btn w-100 h-100") Add to cart
