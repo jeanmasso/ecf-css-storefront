@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5b30ab40-9749-4af7-9f64-084746a13208" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/scripts/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/cart.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/cart.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/category-page.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/category-page.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/product-details.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/product-details.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,13 +51,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,7 +81,8 @@
       <workItem from="1611021736674" duration="1042000" />
       <workItem from="1611115528402" duration="6675000" />
       <workItem from="1611176705535" duration="22000" />
-      <workItem from="1611699251795" duration="20914000" />
+      <workItem from="1611699251795" duration="21994000" />
+      <workItem from="1611781605198" duration="2659000" />
     </task>
     <servers />
   </component>
@@ -95,10 +94,10 @@
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
     <state x="443" y="105" width="1026" height="851" key="#Project_Structure/0.0.1920.1054/1920.0.1050.1680@0.0.1920.1054" timestamp="1610658843066" />
-    <state x="230" y="135" width="1056" height="861" key="dock-window-1" timestamp="1611725221719">
-      <screen x="0" y="0" width="1920" height="1054" />
+    <state x="1556" y="170" width="1056" height="861" maximized="true" key="dock-window-1" timestamp="1611726758189">
+      <screen x="1920" y="0" width="1050" height="1680" />
     </state>
-    <state x="230" y="135" width="1056" height="861" key="dock-window-1/0.0.1920.1054/1920.0.1050.1680@0.0.1920.1054" timestamp="1611725221719" />
+    <state x="1556" y="170" width="1056" height="861" maximized="true" key="dock-window-1/0.0.1920.1054/1920.0.1050.1680@0.0.1920.1054" timestamp="1611726758189" />
     <state x="655" y="254" width="609" height="546" key="find.popup" timestamp="1611707907732">
       <screen x="0" y="0" width="1920" height="1054" />
     </state>
